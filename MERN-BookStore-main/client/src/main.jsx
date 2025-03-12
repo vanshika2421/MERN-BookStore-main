@@ -6,20 +6,18 @@ import { BrowserRouter } from 'react-router-dom';
 import { SnackbarProvider } from 'notistack';
 import { ClerkProvider } from "@clerk/clerk-react";
 
-const clerkKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY || "missing-key";
+// const clerkKey = "pk_test_YXNzdXJpbmctdHJvbGwtMjQuY2xlcmsuYWNjb3VudHMuZGV2JA";
 
-console.log("Clerk Key:", clerkKey); // ✅ Debugging
+// console.log("Clerk Key:", clerkKey); // ✅ Debugging
 
-if (clerkKey === "missing-key") {
-  console.error("❌ Clerk Publishable Key is missing! Check .env file.");
-}
+// if (clerkKey === "missing-key") {
+//   console.error("❌ Clerk Publishable Key is missing! Check .env file.");
+// }
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <ClerkProvider publishableKey={clerkKey}>
     <BrowserRouter>
       <SnackbarProvider>
         <App />
       </SnackbarProvider>
     </BrowserRouter>
-  </ClerkProvider>
 );

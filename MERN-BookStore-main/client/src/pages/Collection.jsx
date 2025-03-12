@@ -29,12 +29,10 @@ const Collection = () => {
     };
     fetchBooks();
   }, []);
-
   const filteredBooks = books.filter((book) =>
     book.title.toLowerCase().includes(searchQuery.toLowerCase()) &&
     (category === "All" || book.genre.toLowerCase() === category.toLowerCase())
   );
-
   return (
     <div className="min-h-screen bg-gray-100 px-6 py-10">
       {/* 🔹 Page Header */}

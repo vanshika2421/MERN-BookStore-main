@@ -61,11 +61,11 @@ const BookSingleCard = ({ book }) => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <div className="relative bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 p-4">
+    <div className="relative bg-white m-3 shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 p-4">
       {/* Book Cover */}
-      <div className="h-48 bg-gray-200 flex items-center justify-center rounded-lg">
+      {/* <div className="h-48 bg-gray-200 flex items-center justify-center rounded-lg">
         <p className="text-gray-400 text-sm">Book Cover</p>
-      </div>
+      </div> */}
 
       {/* Book Details */}
       <div className="mt-4">
